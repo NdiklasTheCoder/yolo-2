@@ -31,13 +31,20 @@ The base image selected is alpine because of it's small size and complete packag
 ## Successful running of the containers
 
 - cd into the yolo folder
-- Run the command docker-compose --build
-- Once the build is successful visit localhost:3000
+- Run the command docker-compose build
+- Once the build is successful visit http://localhost:3000 on your browser
 
 ## Docker image tagging
 
+To view the newly created images run the command
+docker images.
 - Client image tagged as tmatara_yolo-client:1.0-alpine
 - Backend image tagged as tmatara_yolo-backend:1.0-alpine
+
+## Push the images to Docker Hub
+- Login to the Docker Hub from the command line using the command, docker login --username=username --email=youremail@address.com
+- Tag the image using the command, docker tag <imageid> dockerhubname/tmatara_yolo_client:1.0
+- Push the image to the repository, docker push dockerhubname/tmatara_yolo_client
 
 # Docker Hub repo where to find the images
 
