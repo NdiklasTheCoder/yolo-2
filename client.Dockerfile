@@ -6,7 +6,7 @@ LABEL build_date="2020-09-20"
 ARG BUILD_DATE
 
 # Labels
-LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.schema-version="1.1"
 LABEL org.label-schema.name="Yolomy Client"
 LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.description="Yolomy website front-end application"
